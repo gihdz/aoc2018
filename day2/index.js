@@ -12,7 +12,7 @@ ids.forEach(id => {
     idCharsObj[id[i]] = charCount ? charCount + 1 : 1;
   }
   const chKeys = Object.keys(idCharsObj);
-  if (chKeys.filter(chKey => idCharsObj[chKey] == 2).length > 0) twoCounts++;
+  if (chKeys.filter(chKey => idCharsObj[chKey] === 2).length > 0) twoCounts++;
   if (chKeys.filter(chKey => idCharsObj[chKey] === 3).length > 0) threeCounts++;
   idCharsObj = {};
 });
